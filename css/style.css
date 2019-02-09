@@ -1,0 +1,199 @@
+body {
+  margin: 0
+  padding: 0
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background: #849D8F;
+}
+a {
+  text-decoration: none;
+}
+.button {
+  font : inherit;
+
+  text-align: center;
+  color: #FEFEFE;
+  vertical-align: middle;
+  text-transform: none;
+  border: none;
+
+background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+
+}
+.button:hover,
+.button:focus,
+.button:active {
+background-image: linear-gradient(0deg, #ED705E 0%, #F48468 100% F48468);
+}
+
+.main-navigation {
+  font-family: "Roboto" bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.site-navigation,
+.user-navigation {
+list-style: none;
+}
+.site-navigation a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.user-navigation a {
+  background-color: #A1B4A9;
+  color: #FFFFFF;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #F7F6F3;
+  color: #323232;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #F8F7F4;
+  color: #323232;
+}
+.infocard {
+color: #323232;
+
+background-color: #F2E4CE;
+background-image: url("img/bcg/waffle-big-bcg.jpg");
+background-position: center;
+background-repeat: repeat;
+}
+.infocard-list {
+list-style: none;
+font-size: 16px;
+line-height: 22px;
+}
+.infocard h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.blog {
+  color: #323232;
+
+  background-color: #FFFFFF;
+  background-image: url("img/bcg/strawberry-bcg.jpg");
+  background-position: left;
+  background-repeat: repeat;
+}
+.blog h3 {
+font-family: "Roboto" medium;
+font-size: 16px;
+color: #323232;
+letter-spacing: 0;
+line-height: 22px;
+}
+.new-in-blog {
+font-family: "Roboto" bold;
+font-size: 24px;
+color: #323232;
+letter-spacing: 0;
+line-height: 30px;
+}
+.new-in-blog a {
+  text-decoration: underline;
+  color: #323232;
+}
+.subscription {
+  color: #323232;
+
+  background-color: #F8F7F4;
+  background-image: url("img/bcg/post-bcg.svg");
+  background-position: right;
+  background-repeat: repeat;
+}
+.subscription p {
+font-size: 16px;
+color: #5A5A5A;
+letter-spacing: 0;
+line-height: 22px;
+}
+.subscription label{
+  font-size: 16px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 24px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(178,178,178,0.52);
+
+}
+
+.map-info {
+  color: #323232;
+
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: repeat;
+}
+ .adress p {
+   font-size: 18px;
+color: #323232;
+letter-spacing: 0;
+line-height: 24px;
+}
+.phone p {
+  font-family: Helvetica;
+font-size: 14px;
+color: #323232;
+letter-spacing: 0;
+line-height: 20px;
+}
+.main-footer {
+  font-family: "Roboto" bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.main-footer {
+  list-style: none;
+}
+.footer-social a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-social  ul{
+ list-style: none;
+}
+.footer-navigation {
+  list-style: none;
+}
+.footer-navigation a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+  color: #FFBC9E;
+}
+.footer-navigation {
+  text-align: center;
+}
+.footer-copyright {
+  font-size: 12px;
+color: #FEFEFE;
+letter-spacing: 0;
+line-height: 16px;
+}
+.footer-copyright {
+text-align: center;
+}
+.footer-copyright a {
+  text-decoration: underline;
+  color: #FEFEFE;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  text-decoration: underline;
+  color: #FFBC9E;
+}
