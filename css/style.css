@@ -1,12 +1,12 @@
 body {
-  margin: 0
-  padding: 0
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #FFFFFF;
-  text-transform: uppercase;
+  text-transform: none;
 
   background: #849D8F;
 }
@@ -21,6 +21,7 @@ a {
   vertical-align: middle;
   text-transform: none;
   border: none;
+  border-radius: 50px;
 
 background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
 box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
@@ -29,7 +30,9 @@ box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
 .button:hover,
 .button:focus,
 .button:active {
-background-image: linear-gradient(0deg, #ED705E 0%, #F48468 100% F48468);
+  background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+  box-shadow: 0 2px 2px 0 #AC1000;
+
 }
 
 .main-navigation {
@@ -49,22 +52,61 @@ list-style: none;
 .user-navigation a {
   background-color: #A1B4A9;
   color: #FFFFFF;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #F7F6F3;
   color: #323232;
+  border-radius: 50px;
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #F8F7F4;
   color: #323232;
+  border-radius: 50px;
 }
+.user-navigation-current fieldset {
+  background-color: #F8F7F4;
+  color: #323232;
+}
+.inner-page .main-navigation-catalog a {
+  background-color: #D07058
+  color: #FFFFFF;
+  border-radius: 50px;
+}
+ .user-current a {
+  text-align: center;
+  color: #FEFEFE;
+  vertical-align: middle;
+  text-transform: none;
+  border: none;
+  border-radius: 50px;
+
+background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+}
+.breadcrumbs {
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 16px;
+
+list-style: none;
+}
+.breadcrumbs-underline a{
+color: #FFFFFF;
+text-decoration: underline;
+}
+
 .infocard {
 color: #323232;
+text-transform: none;
 
 background-color: #F2E4CE;
-background-image: url("img/bcg/waffle-big-bcg.jpg");
+background-image: url("../img/bcg/waffle-big-bcg.jpg");
 background-position: center;
 background-repeat: repeat;
 }
@@ -79,9 +121,10 @@ line-height: 22px;
 }
 .blog {
   color: #323232;
+  text-transform: none;
 
   background-color: #FFFFFF;
-  background-image: url("img/bcg/strawberry-bcg.jpg");
+  background-image: url("../img/bcg/strawberry-bcg.jpg");
   background-position: left;
   background-repeat: repeat;
 }
@@ -91,6 +134,7 @@ font-size: 16px;
 color: #323232;
 letter-spacing: 0;
 line-height: 22px;
+text-transform: none;
 }
 .new-in-blog {
 font-family: "Roboto" bold;
@@ -98,16 +142,18 @@ font-size: 24px;
 color: #323232;
 letter-spacing: 0;
 line-height: 30px;
+text-transform: none;
 }
 .new-in-blog a {
   text-decoration: underline;
   color: #323232;
+  text-transform: none;
 }
 .subscription {
   color: #323232;
 
   background-color: #F8F7F4;
-  background-image: url("img/bcg/post-bcg.svg");
+  background-image: url("../img/bcg/post-bcg.svg");
   background-position: right;
   background-repeat: repeat;
 }
@@ -116,6 +162,7 @@ font-size: 16px;
 color: #5A5A5A;
 letter-spacing: 0;
 line-height: 22px;
+text-transform: none;
 }
 .subscription label{
   font-size: 16px;
@@ -125,11 +172,38 @@ line-height: 22px;
 
   background: #FFFFFF;
   border: 1px solid rgba(178,178,178,0.52);
+}
+.inner-page h1 {
+  font-family: Helvetica;
+font-size: 35px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 41px;
 
 }
+.catalogue-list {
+list-style: none;
+}
+.catalogue-item h3 a {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  text-decoration: underline;
+}
 
+.catalogue-item-price a {
+font-size: 45px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 13.13px;
+text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
+text-decoration: none;
+}
 .map-info {
   color: #323232;
+  text-transform: none;
 
   background-color: #FFFFFF;
   background-position: center;
@@ -160,6 +234,7 @@ line-height: 20px;
 .footer-social a{
   text-decoration: none;
   color: #FFFFFF;
+  text-transform: none;
 }
 .footer-social  ul{
  list-style: none;
@@ -170,11 +245,14 @@ line-height: 20px;
 .footer-navigation a {
   text-decoration: underline;
   color: #FFFFFF;
+  text-transform: none;
 }
 .footer-navigation a:hover,
 .footer-navigation a:focus {
   text-decoration: underline;
   color: #FFBC9E;
+  text-transform: none;
+
 }
 .footer-navigation {
   text-align: center;
@@ -184,6 +262,7 @@ line-height: 20px;
 color: #FEFEFE;
 letter-spacing: 0;
 line-height: 16px;
+text-transform: none;
 }
 .footer-copyright {
 text-align: center;
