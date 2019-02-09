@@ -30,9 +30,8 @@ box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
 .button:hover,
 .button:focus,
 .button:active {
-  background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
-  box-shadow: 0 2px 2px 0 #AC1000;
-
+background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 2px 2px 0 #AC1000;
 }
 
 .main-navigation {
@@ -72,21 +71,30 @@ list-style: none;
   background-color: #F8F7F4;
   color: #323232;
 }
-.inner-page .main-navigation-catalog a {
-  background-color: #D07058
+.main-navigation-catalog a {
+  background-color: #D07058;
   color: #FFFFFF;
   border-radius: 50px;
 }
- .user-current a {
-  text-align: center;
-  color: #FEFEFE;
-  vertical-align: middle;
-  text-transform: none;
-  border: none;
-  border-radius: 50px;
+  .user-full-current a {
+    font : inherit;
 
-background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
-box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+    text-align: center;
+    color: #FEFEFE;
+    vertical-align: middle;
+    text-transform: none;
+    border: none;
+    border-radius: 50px;
+
+  background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+  box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+}
+.user-full-current a:hover,
+.user-full-current a:focus {
+  color: #FFFFFF;
+  background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 2px 2px 0 #AC1000;
+
 }
 .breadcrumbs {
   font-size: 14px;
@@ -181,9 +189,11 @@ letter-spacing: 0;
 line-height: 41px;
 
 }
+ 
 .catalogue-list {
 list-style: none;
 }
+
 .catalogue-item h3 a {
   font-size: 16px;
   color: #FFFFFF;
@@ -201,6 +211,7 @@ line-height: 13.13px;
 text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
 text-decoration: none;
 }
+
 .map-info {
   color: #323232;
   text-transform: none;
