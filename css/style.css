@@ -327,28 +327,52 @@ min-height: 115px;
   margin-right: 10px;
 }
 .site-navigation{
-  width: 395px;
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+margin-top: 27px;
   padding: 0;
   list-style: none;
 }
 
 .user-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 265px;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 27px;
   margin-left: auto;
 }
 .working-info {
-  width: 196px;
-  margin: 0;
+  width: 170px;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 .main-container {
   width: 1145px;
   margin: 0 auto;
   padding: 0 27px;
+}
+.infocard {
+  width: 1145px;
+  margin-bottom:40px;
+  padding: 0;
+}
+.infocard h2 {
+width: 1045px;
+margin-bottom: 27px;
+margin-left: 21px;
+margin-top: 21px;
+}
+.infocard-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
 }
 .index-columns {
   display: flex;
@@ -360,11 +384,18 @@ width:560px;
 .subscription{
   width: 560px;
 }
+.subscription .subscription-form {
+  display: flex;
+  justify-content: space-between;
+}
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
   margin: 0 ;
+  margin-right: 20px;
   margin-bottom: 5px;
-  padding: 0 ;
+  padding-left:0 ;
 }
 .page-title {
   margin: 0 ;
@@ -394,9 +425,19 @@ width:560px;
   margin-bottom: 40px;
 }
 .pagination-list{
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  margin:0;
   padding: 0;
   list-style: none;
+}
+.pagination-item-curren{
+  width: 20px;
+  margin-right: 20px:
+}
+.pagination-item{
+  width: 20px;
+  margin-right: 20px:
 }
 .main-footer {
   padding: 35px 0;
@@ -411,11 +452,19 @@ width:560px;
   display: flex;
 }
 .footer-social {
+  display: flex;
+  flex-direction: row;
   width: 190px;
   margin-right: 200;
 }
 .footer-navigation {
-  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 380px;
+}
+.footer-navigatiom-item {
+width: 190 
 }
 .footer-copyright {
 width: 200px;
