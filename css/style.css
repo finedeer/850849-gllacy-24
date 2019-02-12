@@ -387,10 +387,16 @@ width:560px;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 80px;
 }
 .catalogue-item {
   width: 267px;
   margin-bottom: 40px;
+}
+.pagination-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .main-footer {
   padding: 35px 0;
