@@ -439,9 +439,19 @@ width:560px;
   list-style: none;
   margin-bottom: 80px;
 }
+
 .catalogue-item {
+  display: flex;
+  flex-direction: column;
   width: 267px;
   margin-bottom: 40px;
+}
+.catalogue-item h3 {
+  order: 2;
+  text-align: center;
+}
+.catalogue-item-price {
+  margin-top: -60px;
 }
 .pagination-list{
   display: flex;
