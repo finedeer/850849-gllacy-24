@@ -142,6 +142,11 @@ content: url("../img/icon/entrance.svg");
 
   width: 21px;
   height: 19px;
+
+  background-image: url("../img/icon/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0 ;
+
 }
 .user-navigation-login:hover::before,
 .user-navigation-login:focus::before {
@@ -247,7 +252,7 @@ text-decoration: underline;
 color: #323232;
 text-transform: none;
 border: none;
-border-radius: 10px;
+border-radius: 15px;
 
 background-color: #F2E4CE;
 background-image: url("../img/bcg/waffle-big-bcg.jpg");
@@ -267,7 +272,7 @@ line-height: 22px;
   color: #323232;
   text-transform: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
 
   margin-bottom: 40px;
   padding-top: 25px;
@@ -301,26 +306,44 @@ width: 300px;
 margin: 0;
 }
 .new-in-blog a {
-  text-decoration: underline;
-  color: #323232;
-  text-transform: none;
+  font-size: 24px;
+color: #323232;
+letter-spacing: 0;
+line-height: 30px;
+text-decoration: underline;
 }
-.subscription {
+.subscription  {
+  width: 560px;
+  height: 100%;
   color: #323232;
   text-transform: none;
   border: none;
-  border-radius: 10px;
 
-margin-left: 26px;
-  margin-bottom: 40px;
+  margin-left: 26px;
+    margin-bottom: 40px;
 
   background-color: #F8F7F4;
   background-image: url("../img/bcg/post-bcg.svg");
-  background-position: right;
-  background-repeat: no-repeat;
+  background-repeat: round;
+  border-radius: 15px;
+
+}
+  .subscription .sub-container {
+  width: 548px;
+box-sizing: border-box;
+  color: #323232;
+  text-transform: none;
+  border: none;
+
+    margin: 4px;
+    padding: 23px 30px 34px ;
+
+  background-color:  #F8F7F4;
+  background-position: center;
+  border-radius: 15px;
 }
 
-.subscription p {
+.subscribe {
 font-size: 16px;
 color: #5A5A5A;
 letter-spacing: 0;
@@ -736,10 +759,23 @@ width:560px;
   display: block;
   width: 32px;
   height: 32px;
-  opacity: 0.5;
-background: #FFFFFF;
-vertical-align: middle;
+border-radius: 50%;
+background-repeat: no-repeat;
+background-position: 0 0;
   margin-right: 10px;
+}
+.social-button::after {
+  content:normal;
+
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+border-radius: 50%;
+background-repeat: no-repeat;
+opacity: 0.5;
+background: #FFFFFF;
+
 }
  .button-tw {
    background-color:  #849D8F;
