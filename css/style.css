@@ -180,7 +180,30 @@ content: url("../img/icon/basket.svg");
   padding: 7px 5px;
   margin-left: 7px;
 }
-  .user-full-current a {
+.catalog-dropdown-menu {
+  position: absolute;
+  list-style-type: none;
+
+  font-size: 14px;
+color: #323232;
+letter-spacing: 0;
+line-height: 30px;
+
+  width: 106px;
+
+  margin-top: 2px;
+  padding-left: 22px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 19px;
+
+background: #F8F7F4;
+border-radius: 10px;
+box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
+
+}
+
+.user-full-current a {
     font : inherit;
 
     text-align: center;
