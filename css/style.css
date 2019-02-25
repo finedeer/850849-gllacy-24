@@ -134,18 +134,21 @@ background-position: center;
 }
 
 .user-navigation-emptycart::before {
-content: url("../img/icon/basket.svg");
+content: '';
   position: absolute;
   top:5px;
   left:15px;
 
   width: 21px;
   height: 20px;
+  background-image: url("../img/icon/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .user-navigation-emptycart:hover::before,
 .user-navigation-emptycart:focus::before {
-  padding-left: 45px;
-  color: #ff0000;
+  background: #323232; ;
+
 }
 
 
