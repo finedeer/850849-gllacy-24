@@ -147,7 +147,30 @@ content: '';
 }
 .user-navigation-emptycart:hover::before,
 .user-navigation-emptycart:focus::before {
-  background: #323232; ;
+  background: #323232;
+}
+
+.user-navigation .user-navigation-login {
+  position: relative;
+  padding-left: 45px;
+}
+.user-navigation-login::before {
+content: '';
+  position: absolute;
+  top:5px;
+  left:15px;
+
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/icon/entrance.svg");
+  fill: none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation-login:hover::before,
+.user-navigation-login:focus::before {
+  background: #323232;
 
 }
 
@@ -164,6 +187,9 @@ content: '';
   border-radius: 50px;
   padding: 7px 5px;
   margin-left: 7px;
+}
+.site-navigation .catalog-dropdown-menu{
+  display: none;
 }
 .catalog-dropdown-menu {
   position: absolute;
@@ -182,10 +208,14 @@ display: block;
 background: #F8F7F4;
 border-radius: 10px;
 box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
-
 }
+.site-navigation >li:hover .catalog-dropdown-menu {
+  display: block;
+}
+
 .catalog-dropdown-menu a {
-text-decoration: none;
+  display: block;
+  text-decoration: none;
 padding: 0;
 margin: 0;
 font-size: 14px;
@@ -200,7 +230,7 @@ line-height: 30px;
 }
 .catalog-dropdown-menu a:hover,
 .catalog-dropdown-menu a:focus {
-display: block;
+
   background-color: ##FBDED7;
 }
 
@@ -426,6 +456,8 @@ text-decoration: none;
 }
 
 .map-info {
+  position: relative;
+
   color: #323232;
   text-transform: none;
   border: none;
@@ -797,6 +829,7 @@ border-radius: 50%;
 background: #FFFFFF;
 background-repeat: no-repeat;
 background-position: 0 0;
+
 }
 
  .button-tw::before {
@@ -929,15 +962,12 @@ color: #323232;
 
 background-color: #F8F7F4;
 box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
+border-radius: 15px;
 }
 
 .modal-login {
   width: 280px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-radius: 15px;
+  padding: 18px 20px;
 }
 .login-icon-user input,
 .login-icon-password input {
@@ -948,9 +978,9 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   margin: 0;
   margin-bottom: 17px;
 
- padding-left: 16px;
- padding-top: 12px;
- padding-bottom: 11px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 11px;
 
 
  border: 1px solid #D3D3D2;
@@ -966,18 +996,18 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 .modal-search {
 width: 344px;
 padding: 15px 20px;
-
 }
+
 .search-loupe-icon input {
-  box-sizing: border-box;
+box-sizing: border-box;
  display: block;
  background: #FFFFFF;
  width: 314px;
  margin: 0;
 
-padding-left: 16px;
-padding-top: 12px;
-padding-bottom: 11px;
+ padding-left: 16px;
+ padding-top: 12px;
+ padding-bottom: 11px;
 
 
 border: 1px solid #D3D3D2;
