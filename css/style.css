@@ -10,6 +10,35 @@ body {
 
   background: #849D8F;
 }
+.slider {
+position: relative;
+
+top: -120px;
+left: 0;
+
+  width: 695px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 0;
+  margin-bottom: -200px;
+  padding-top: 240px;
+  padding-bottom: 55px;
+
+background-image: url("../img/two-ice-cream.png");
+background-repeat: no-repeat;
+}
+.two-icecreams {
+font-size: 60px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 60px;
+margin-bottom: 0;
+}
+.two-icecreams p:first-child {
+  margin-bottom:32px;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,7 +78,6 @@ img {
 
 background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
 box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
-
 }
 .button.disabled,
 .button:disabled {
@@ -57,16 +85,31 @@ cursor: default;
 background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
 background: rgba(255,255,255,0.20);
 box-shadow: 0 2px 2px 0 #AC1000;
-
 }
-
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
+background: rgba(255,255,255,0.20);
 background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
 box-shadow: 0 2px 2px 0 #AC1000;
-}
 
+}
+.button:active {
+  background: rgba(0,0,0,0.07);
+background-image: linear-gradient(0deg, #F26843 0%, #E74A35 100%);
+box-shadow: inset 0 2px 2px 0 #942718;
+
+}
+.slider-btn {
+width: 282px;
+
+font-size: 32px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 44px;
+padding-top: 15px;
+padding-bottom: 20px;
+}
 .main-navigation {
   font-family: "Roboto" bold;
   font-size: 16px;
@@ -308,36 +351,8 @@ letter-spacing: 0;
 .filters ul {
   list-style: none;
 }
-.slider {
-  display: block;
-  width: 695px;
-  margin-left: auto;
-  margin-right: auto;
 
-  background-image: url("../img/two-ice-cream.png");
 
-}
-.two-icecreams {
-font-size: 60px;
-color: #FFFFFF;
-letter-spacing: 0;
-text-align: center;
-line-height: 60px;
-
-margin-bottom:32px;
-}
-.slider-btn {
-width: 282px;
-
-font-size: 32px;
-color: #FFFFFF;
-letter-spacing: 0;
-text-align: center;
-line-height: 44px;
-
-margin: 0 auto;
-
-}
 .infocard {
 color: #323232;
 text-transform: none;
@@ -477,7 +492,6 @@ line-height: 24px;
 }
 
 .inner-page h1 {
-  font-family: Helvetica;
 font-size: 35px;
 color: #FFFFFF;
 letter-spacing: 0;
@@ -506,29 +520,33 @@ line-height: 13.13px;
 text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
 text-decoration: none;
 }
+.map {
+  display: flex;
+}
+ .map div   {
+   position: absolute;
+   width: 254px;
+   margin-top: 60px;
+   margin-right: 27px;
+   margin-bottom: 60px;
+   margin-left:870px;
 
-.map-info {
-  position: relative;
+   padding-top: 29px;
+   padding-right: 25px;
+   padding-bottom: 31px;
+   padding-left: 25px;
 
   color: #323232;
-  text-transform: none;
-  border: none;
-  border-radius: 10px;
-
-  width: 255px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 29px;
-  padding-bottom: 31px;
-  margin-left: auto;
-
   background-color: #FFFFFF;
-  background-position: center;
-  background-repeat: repeat;
+  border:none;
+  border-radius: 10px;
 }
-.map-info-button{
-  width: 254px;
+.map-img {
+  position: relative;
 }
+
+
+
  .adress p {
    font-size: 18px;
 color: #323232;
@@ -537,7 +555,6 @@ line-height: 24px;
 margin-bottom: 25px;
 }
 .phone p {
-  font-family: Helvetica;
 font-size: 14px;
 color: #323232;
 letter-spacing: 0;
@@ -606,6 +623,7 @@ body {
   min-height:1690px ;
   min-width: 1200px;
   }
+
 .main-header {
 min-height: 115px;
 }
@@ -692,10 +710,8 @@ min-height: 115px;
   width: 560px;
   color: #FFFFFF;
 
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-left: 21px;
-  padding-bottom: 23px;
+padding: 0;
+  margin-bottom: 23px;
   margin-bottom: 40px;
 
   background-color: #940215;
@@ -707,10 +723,7 @@ min-height: 115px;
   width: 560px;
   color: #FFFFFF;
 
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-left: 21px;
-  padding-bottom: 23px;
+padding: 0;
   margin-bottom: 40px;
   margin-left: 26px;
 
@@ -720,14 +733,24 @@ min-height: 115px;
   background-repeat: repeat;
 }
 
-.rapsberty-bnr p,
-.choco-bnr p {
+.rapsberry,
+.choco {
 font-size: 18px;
 letter-spacing: 0;
 line-height: 22px;
 
-margin-bottom:45px;
+margin-top: 16px;
+margin-right: 20px;
+margin-left: 21px;
+margin-bottom: 23px;
+
+
 }
+.rapsberry-b
+.choco-b {
+margin-right: : auto;
+}
+
 .hit {
   margin-bottom: 40px;
 }
