@@ -8,6 +8,23 @@
  <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-page">
+    <section class="slider">
+    <p class="two-icecreams frst-slide"> Крем-брюле и пломбир  с малиновым джемом</p>
+    <p class="two-icecreams scnd-slide visually-hidden"> Шоколадный пломбир и лимонный сорбет</p>
+    <p class="two-icecreams thrd-slide visually-hidden"> Пломбир с помадкой и клубничеый щербет</p>
+    <p class="two-icecreams"> <a href="give-all" class="button slider-btn">Давайте оба!</a></p>
+    <ul class="slider-switches">
+      <li class="slide-radio">
+        <button class="slide-btn"><span class="visually-hidden">Первый слайд</span></button>
+      </li>
+      <li class="slide-radio">
+        <button class="slide-btn"><span class="visually-hidden">Второй слайд</span></button>
+      </li>
+      <li class="slide-radio">
+        <button class="slide-btn"><span class="visually-hidden">Третий слайд</span></button>
+      </li>
+      </ul>
+    </section>
     <header class="main-header">
       <div class="container">
           <nav class="main-navigation">
@@ -47,33 +64,16 @@
 <main class="container">
   <div class="main-container">
   <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
-  <section class="slider">
-  <p class="two-icecreams frst-slide"> Крем-брюле и пломбир  с малиновым джемом</p>
-  <p class="two-icecreams scnd-slide visually-hidden"> Шоколадный пломбир и лимонный сорбет</p>
-  <p class="two-icecreams thrd-slide visually-hidden"> Пломбир с помадкой и клубничеый щербет</p>
-  <p class="two-icecreams"> <button class="button slider-btn" type="submit">Давайте оба!</button></p>
-  <ul class="slider-switches">
-    <li class="slide-radio">
-      <button class="slide-btn"><span class="visually-hidden">Первый слайд</span></button>
-    </li>
-    <li class="slide-radio">
-      <button class="slide-btn"><span class="visually-hidden">Второй слайд</span></button>
-    </li>
-    <li class="slide-radio">
-      <button class="slide-btn"><span class="visually-hidden">Третий слайд</span></button>
-    </li>
-    </ul>
-  </section>
   <section class="banner">
     <div class="rapsberty-bnr">
       <h2 class="rapsberry">Малинка даром!</h2>
       <p class="rapsberry">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <p class="rapsberry rapsberry-b"><button class="button banner-btn" type="submit">Хочу варенье!</button></p>
+      <p class="rapsberry rapsberry-b"><a href="whant-jam">Хочу варенье!</a></p>
     </div>
     <div class="choco-bnr">
       <h2 class="choco">Шоколадки даром!</h2>
       <p class="choco">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-    <p class="choco choco-b "><button class="button banner-btn" type="submit">Хочу шоколадки!</button></p>
+    <p class="choco choco-b "><a href="want-choco">Хочу шоколадки!</a></p>
     </div>
   </section>
   <section class="hit">
@@ -140,7 +140,6 @@
             </li>
           </ul>
   </section>
-  <!-- слайдер-->
   <section class="infocard">
     <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
     <ul class="infocard-list">
@@ -182,10 +181,11 @@
 </div>
         </section>
       </div>
+      </main>
       <section class="map">
         <h4 class="visually-hidden">Как до нас добраться</h4>
             <p class="map-img">
-              <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная19/8, Санкт-Петербург">
+              <img src="img/map.jpg"  alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная19/8, Санкт-Петербург">
             </p>
           <div сlass="map-info">
             <h4 class="visually-hidden">Контактная информация</h4>
@@ -200,7 +200,6 @@
         </div>
       </section>
       </div>
-      </main>
       <footer class="main-footer">
         <div class="footer-container">
           <div class="footer-social">
