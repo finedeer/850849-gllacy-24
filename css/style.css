@@ -521,14 +521,18 @@ list-style: none;
   letter-spacing: 0;
   text-align: center;
   line-height: 22px;
-  text-decoration: underline;
+  text-decoration: none;
+}
+.catalogue-item-product-name {
+border-bottom: 1px solid  rgba(0,0,0,0.2);
+padding-bottom: 3px;
 }
 
 .catalogue-item-price a {
 font-size: 45px;
 color: #FFFFFF;
 letter-spacing: 0;
-line-height: 13.13px;
+line-height: 13px;
 text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
 text-decoration: none;
 }
@@ -552,13 +556,10 @@ box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   display: none;
 }
 .catalogue-list li:hover  {
-
-
-
-
-border: none;
-border-radius: 10px;
-background: #F8F7F4 20%;
+border: 1px rgba(151,151,151,1);
+border-radius: 4px;
+background: rgba(225,225,225,0.2);
+background: rgba(248,247,244,0.2);
 box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
 }
 .catalogue-list li:hover .catalogue-item-btn {
@@ -570,17 +571,24 @@ margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
 
-  font-family: inherit;
-  font-size: 18px;
-  text-align: center;
-  color: #FFFFFF;
-  vertical-align: middle;
-  text-transform: none;
+font-size: 18px;
+color: #FEFEFE;
 letter-spacing: 0;
+text-align: center;
 line-height: 24px;
+
 border: none;
 border-radius: 50px;
-  background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+background: #E84D37;
+background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 1px 2px 0 #AC1000;
+}
+.catalogue-item-btn a {
+  font-size: 18px;
+  color: #FEFEFE;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
 }
 
 .map {
@@ -809,6 +817,23 @@ margin-bottom: 23px;
 .choco-b {
 margin-right: : auto;
 }
+.rapsberry-b a,
+.choco-b a{
+  font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 24px;
+padding: 15px 20px;
+
+border: none;
+border-radius: 50px;
+  opacity: 0.99;
+background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
+}
+
+
 
 .hit {
   margin-bottom: 40px;
