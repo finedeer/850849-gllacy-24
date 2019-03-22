@@ -8,28 +8,12 @@
  <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-page">
-    <div class="slaider-container">
-
-  <section class="slider">
-    <p class="two-icecreams frst-slide"> Крем-брюле и пломбир  с малиновым джемом</p>
-    <p class="two-icecreams scnd-slide"> Шоколадный пломбир и лимонный сорбет</p>
-    <p class="two-icecreams thrd-slide"> Пломбир с помадкой и клубничеый щербет</p>
-    <p class="two-icecreams-btn"> <a href="give-all" class="button slider-btn">Давайте оба!</a></p>
-
-    <ul class="slider-switches">
-      <li class="slide-radio">
-        <button class="slide-btn btn1"><span class="visually-hidden">Первый слайд</span></button>
-      </li>
-      <li class="slide-radio">
-        <button class="slide-btn btn2"><span class="visually-hidden">Второй слайд</span></button>
-      </li>
-      <li class="slide-radio">
-        <button class="slide-btn btn3"><span class="visually-hidden">Третий слайд</span></button>
-      </li>
-      </ul>
+    <div class="bcg-icy123" >
+<section class="background-container">
+  
 </section>
 </div>
-    <header class="main-header">
+<header class="main-header">
 <div class="container">
           <nav class="main-navigation">
             <a class="main-headerlogo">
@@ -46,15 +30,52 @@
               <li><a href="dropdown-menu-melorin.html">Мелорин</a></li>
             </ul>
               </a></li>
-              <li><a href="shipping-and-payment.html">Досавка и оплата</a></li>
+              <li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
               <li><a href="about.html">О компании</a></li>
             </ul>
               <div class="user-blok">
             <ul class="user-navigation">
-              <li><a class="user-navigation-loupe" href="search-loupe.html"></a></li>
-              <li><a class="user-navigation-login"  href="login.html">
-                <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000" fill-opacity="0"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>-->
-                Вход</a></li>
+              <li><a class="user-navigation-loupe" href="search-loupe.html"></a>
+              <div class="madal modal-search">
+              <h2 class="modal-login visually-hidden">Окно поиска</h2>
+                <form>
+                  <label class="search-loupe-icon">
+                    <input   type="text" name="search" placeholder="Что ищем?">
+                  </label>
+                  <button type="submit"></button>
+                </div>
+              </li>
+              <li><a class="user-navigation-login" href="login.html">Вход</a>
+                <div class="modal modal-login">
+                  <h2 class="modal-login visually-hidden">Вход</h2>
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                      <label class="login-icon-user">
+                      <input   type="email" name="email" placeholder="Электронная почта">
+                      </label>
+                      </p>
+                      <p>
+                        <label class="login-icon-password">
+                        <input  type="password" name="password" placeholder="Пароль">
+                        </label>
+                        </p>
+                        <div class="login-link-button">
+                        <p class="login-password-info">
+                          <a class="restore" href="#">Забыли пароль?</a>
+                            <a class="new-user" href="#">Новая регистрация</a>
+                            </p>
+                            <p>
+                              <button class="button" type="submit">
+                                Войти
+                                </button>
+                                </p>
+                              </div>
+                  </form>
+                  <button class="modal-close" type="button">
+                    Закрыть
+                    </button>
+                </div>
+              </li>
               <li><a class="user-navigation-emptycart" href="emptycart.html">Пусто</a></li>
             </ul>
           </nav>
@@ -65,7 +86,26 @@
         </div>
             </div>
         </header>
-<main class="container">
+      <main class="container">
+        <section class="slider">
+          <p class="two-icecreams frst-slide"> Крем-брюле и пломбир  с малиновым джемом</p>
+          <p class="two-icecreams scnd-slide"> Шоколадный пломбир и лимонный сорбет</p>
+          <p class="two-icecreams thrd-slide"> Пломбир с помадкой и клубничеый щербет</p>
+          <p class="two-icecreams-btn"> <a href="give-all" class="button slider-btn">Давайте оба!</a></p>
+
+          <ul class="slider-switches">
+            <li class="slide-radio">
+              <button class="slide-btn btn1"><span class="visually-hidden">Первый слайд</span></button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn btn2"><span class="visually-hidden">Второй слайд</span></button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn btn3"><span class="visually-hidden">Третий слайд</span></button>
+            </li>
+            </ul>
+      </section>
+
   <div class="main-container">
   <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
   <section class="banner">
@@ -187,9 +227,10 @@
       </div>
 </main>
       <section class="map">
+        <div class="map-container">
         <h4 class="visually-hidden">Как до нас добраться</h4>
             <p class="map-img">
-              <img  src="img/map.jpg"   alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная19/8, Санкт-Петербург">
+              <img class="visually-hidden" src="img/map.jpg"   alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная19/8, Санкт-Петербург">
             </p>
           <div сlass="map-info">
             <h4 class="visually-hidden">Контактная информация</h4>
@@ -202,6 +243,7 @@
             <button class="button" type="submit">Форма обратной связи</button>
           </form></p>
         </div>
+      </div>
       </section>
       </div>
       <footer class="main-footer">
@@ -232,6 +274,7 @@
           </div>
         </div>
               </footer>
+
 
               </section>
               <section class="madal modal-search">
