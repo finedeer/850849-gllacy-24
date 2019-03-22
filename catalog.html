@@ -23,6 +23,40 @@
               <li><a class="user-navigation-loupe" href="search-loupe.html"></a></li>
               <li><a class="user-navigation-login" href="login.html">Вход</a></li>
               <li class="user-navigation-current"><a href="cart.html">2 товара</a>
+                <div class="modal modal-full-current">
+                    <fieldset сlass="user-current">
+                      <legend>Состояние корзины</legend>
+                      <table class="user-current">
+                        <tr class="current-creamy1">
+                          <td>X</td>
+                    <td><p class="catalogue-item-image">
+                        <img src="img/creamy1.png" width="50" height="50" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                      </p></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1,5кгх200руб.</td>
+                      <td>300руб.</td>
+                    </tr>
+                     <tr class="current-creamy3">
+                       <td>X</td>
+                       <td><p class="catalogue-item-image">
+                           <img src="img/creamy3.png" width="50" height="50" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                         </p></td>
+                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td>1,5кгх300руб.</td>
+                        <td>450руб.</td>
+                      </tr>
+                      <tr class="current-total-cost">
+                        <th colspan="4"></th>
+                        <td>Итого:750руб.</td>
+                      </tr>
+                    </table>
+                    <p class="user-full-current">
+                      <a href="checkout.html">Оформить заказ</a>
+                    </p>
+                      </fieldset>
+                  </form>
+                </div>
+
               </li>
             </ul>
             <div class="working-info">
@@ -59,19 +93,19 @@
             <fieldset сlass="fatness-fillers">
               <legend>Жирность:</legend>
               <ul>
-                <li>
+                <li class="filter-input-radio">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fatness" value="zero" id="filter-fatness-zero">
                   <label for="filter-fatness-zero">0%</label>
                 </li>
-                <li>
+                <li class="filter-input-radio">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fatness" value="before-ten" id="filter-fatness-before-ten" checked>
                   <label for="filter-fatness-before-ten">до 10%</label>
                 </li>
-                <li>
+                <li class="filter-input-radio">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fatness" value="before-thirty" id="filter-fatness-before-thirty">
                   <label for="filter-fatness-before-thirty">до 30%</label>
                 </li>
-                <li>
+                <li class="filter-input-radio">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fatness" value="above-thirty" id="filter-fatness-above-thirty">
                   <label for="filter-fatness-above-thirty">выше 30%</label>
                 </li>
